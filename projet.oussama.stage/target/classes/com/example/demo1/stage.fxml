@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.HelloController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="266.0" style="-fx-background-color: #DC7633;" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fill="#b0535300" layoutX="133.0" layoutY="219.0" radius="126.0" stroke="#f8f4f16b" strokeType="INSIDE" />
+            <Label layoutX="40.0" layoutY="166.0" text="Application De " textFill="#1d58de">
+               <font>
+                  <Font name="Algerian" size="24.0" />
+               </font>
+            </Label>
+            <Line endX="124.0" layoutX="135.0" layoutY="212.0" startX="-128.0" stroke="#fffbf4" />
+            <Label layoutX="36.0" layoutY="374.0" text="Copyright (C). All Rights reserved " textFill="#1d58de">
+               <font>
+                  <Font name="Algerian" size="10.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="73.0" fitWidth="119.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../1dc71ed7-2ddb-4252-8b59-5477e44662c1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="71.0" layoutY="237.0" text="Cryptage" textFill="#1d58de">
+               <font>
+                  <Font name="Algerian" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="367.0" style="-fx-background-color: #BDC3C7;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="87.0" layoutY="56.0" text="Cryptage Sécurisée">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="130.0" text="Dossier PDF ">
+               <font>
+                  <Font name="Algerian" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="pdfTextField" layoutX="138.0" layoutY="126.0" onMouseClicked="#selectPdfDirectory" prefHeight="25.0" prefWidth="166.0" promptText="Sélectionner un dossier PDF :" />
+            <Label layoutX="32.0" layoutY="188.0" text="Fichier XSL">
+               <font>
+                  <Font name="Algerian" size="16.0" />
+               </font>
+            </Label>
+            <TextField layoutX="138.0" layoutY="183.0" onMouseClicked="#selectXslFile" prefHeight="25.0" prefWidth="166.0" promptText="Sélectionner un fichier XSL " fx:id="xslTextField" />
+            <Button layoutX="35.0" layoutY="233.0" mnemonicParsing="false" onAction="#onCryptButtonClick" prefHeight="25.0" prefWidth="273.0" style="-fx-background-color: #DC7633;" text="Crypter">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
